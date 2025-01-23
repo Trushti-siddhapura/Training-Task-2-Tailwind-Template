@@ -7,11 +7,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    
+    <!-----------------------Navbar----------------->
     <nav class="navbar py-4 flex flex:md text-gray-500">
         <h1 class="mx-72 font-bold text-3xl text-gray-500">enNo</h1>
         <ul class=" pl-36 flex flex:md sm:flex-row space-x-7 justify-center">
-            <li class="cursor-pointe text-green-500">
+            <li class="cursor-pointer text-green-500">
                 <a href="http://127.0.0.1:5500/dist/index.html">
                 Home</li></a>
             <li class="cursor-pointer  hover:text-green-500">
@@ -33,7 +33,7 @@
                 <div class="absolute top-full right-0 rounded-lg p-3 mt-1  shadow-md scale-y-0 group-focus:scale-y-100 origin-top duration-200">
                 <ul>
                     <li>
-                        <a href="http://127.0.0.1:5500/dist/index.html">  Dashboard</a>
+                        <a href="http://127.0.0.1:5500/dist/index.html">Dashboard</a>
                        
                     </li>
                     <li>
@@ -54,30 +54,194 @@
             <button class="px-4 flex border-collapse bg-green-600 rounded-full text-center p-1 mb-2 text-white text-md">Get started</button>
        </ul>
     </nav>
-
-
-    <main>
-        <div class="container">
-            <div class="row flex">
-                <div class=" col-12 col-lg-6">
-                <section class="py-72 ps-96 text-gray-500">
-                    <h1 class="font-bold text-3xl pb-5">Elegent and creative solutions</h1>
+<!----------------------Home Scetion------------------>
+                
+                <div class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-0">
+                <div class="lg:ms-80 md:ms-10">
+                <div class="text-gray-500">
+                    <h1 class="font-bold text-5xl pb-5 mt-60">Elegent and creative solutions</h1>
                     <p class="w-100 pb-5">We are team of talented designers  making websites with bootstrap </p>
                     <div class="flex">
                     <button class="px-4 flex border-collapse bg-green-600 rounded-full text-center p-3 w-32 mb-2 text-white text-md">Get started</button>
+                    <div class="px-5 pt-1 flex">
                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="green">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                         <path strokeLinecap="round" strokeLinejoin="round" d="M15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z" />
-                      </svg><p>Watch Video</p>
-                </div>
-                </section>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <img src="Images/hero-img.png" class="w-96 h-96 block ms-24 mt-48">
+                      </svg><p class="mt-1">Watch Video</p></div></div>
                 </div>
             </div>
+                    <img src="Images/hero-img.png" class="mr-96">
+                </div>
+           
+
+                <!-------------The cards System---------------->
+    
+                
+                    <div class="grid lg:grid-cols-3 md:grid-cols-3 sm:grids-cols-1 mt-20 gap-4 lg:mx-80">
+
+                        <div class=" bg-slate-50 text-gray-600 p-12">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 30 30"  stroke="green" class="w-14 h-14">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
+                          </svg>
+                    <h2 class="text-2xl font-bold">Magni Dolores</h2>     
+                    <p class="pt-3">Excepteur sint Occaecat cupidatat non-proident,sunt in culpa qui officia</p>
+                        </div>
+
+                    <div class=" bg-slate-50 text-gray-600 p-12">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 30 30"  stroke="green" class="w-14 h-14">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
+                          </svg>
+                    <h2 class="text-2xl font-bold">Magni Dolores</h2>     
+                    <p class="pt-3">Excepteur sint Occaecat cupidatat non-proident,sunt in culpa qui officia</p>
+                    </div>
+
+                    <div class=" bg-slate-50 text-gray-600 p-12">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 30 30"  stroke="green" class="w-14 h-14">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
+                          </svg>
+                    <h2 class="text-2xl font-bold">Magni Dolores</h2>     
+                    <p class="pt-3">Excepteur sint Occaecat cupidatat non-proident,sunt in culpa qui officia</p>
+                    </div>
+                </div>
+
+<!-----------About Section------------->               
+<section>
+
+        <div class="lg:mt-40 md:mt-10">
+        <div class= "text-gray-500 text-center">
+            <h1 class="text-3xl font-bold">ABOUT</h1>
+            <p class="pt-3">
+                Necessitation eius consequatur ex aliquid fuga eum quidum sint consequatur
+            </p>
         </div>
-    </main>
+        </div>
+<!------------inside About Scetion-------------->
+    <div class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 lg:mt-14 md:mt-10 lg:mx-80">
+            <div class="relative">
+               
+                   
+                     <img src="Images/about.png">
+                     <button class="md:absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 hover:fill-green-500">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="green" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                      </svg></button>   
+           </div>
+        <div class="text-gray-500 lg:ms-12">
+            <h1 class="text-3xl font-bold">Voluptatem dignission providing in the the main header section which is very easy</h1>
+            <p class="mt-5 text-black text-lg">If you're looking for random paragraphs, you've come to the right place. When a random word or a random sentence isn't quite enough</p>
+            <div class="mt-3  text-black">
+                <div class="flex">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-check-all" viewBox="0 0 16 16">
+                    <path d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486z"/>
+                </svg>
+                  <span class="mx-3 my-1 text-lg">This is Privete Section.</span>  </div>
+
+                  <div class="flex">
+
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-check-all" viewBox="0 0 16 16">
+                    <path d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486z"/>
+                </svg>
+                  <span class="mx-3 my-1 text-lg">random sentence isn't quite enough, the next logical step is to find</span></div>
+
+                  <div class="flex">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-check-all" viewBox="0 0 16 16">
+                    <path d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486z"/>
+                </svg>
+                  <span class="mx-3 my-1 text-lg">random sentence isn't quite enough, the next logical step is to find a random paragraph</span>
+                </div>                          
+                <p class="mt-6 text-lg">While it may not be obvious to everyone, there are a number of reasons creating random paragraphs can be useful. A few examples of how some people use this generator are listed in the following paragraphs.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-----------the number System -------------------->
+<div class="mt-20">
+<div class="grid lg:grid-cols-4 md:grid-cols-2 lg:mx-80 px-7 md:mx-24 gap-7">
+    <h1 class="text-5xl text-green-600 font-bold">
+        232   <p class="text-base text-gray-400">clients</p> 
+    </h1>
+    <h1 class="text-5xl text-green-600 font-bold">
+        521   <p class="text-base  text-gray-400 ">projects</p> 
+    </h1>
+    <h1 class="text-5xl text-green-600 font-bold">
+        1453    <p class="text-base text-gray-400">Hours of Support</p> 
+    </h1>
+    <h1 class="text-5xl text-green-600 font-bold">
+        32   <p class="text-base  text-gray-400">Works</p> 
+    </h1>
+</div>
+</div>
+
+<!---------------The services Section--------------------->
+<div class="lg:mt-40 md:mt-10">
+    <div class= "text-gray-500 text-center">
+        <h1 class="text-3xl font-bold">SERVICES</h1>
+        <p class="pt-4 text-black text-xl">
+            Necessitation eius consequatur ex aliquid fuga eum quidum sint consequatur
+        </p>
+<!----------1-->
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-7 lg:mx-80 lg:my-12 justify-center">
+            <div class="border 0 p-20">
+               
+                    <svg xmlns="http://www.w3.org/2000/svg" width="65" height="60" fill="white" class="bi bi-activity justify-self-center bg-green-700 p-4 my-1 rounded" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2"/>
+                      </svg><p class="text-xl text-gray-500 text-center font-bold mt-4">Nesciunt Mete</p>
+                      <p class="text-sm -mx-14 mt-3">There wasn't a whole lot he could do at that moment. He played the situation again and again in his head looking at what he might have done differently to make the situation better.</p>
+ <!----------2-->               
+            </div>
+
+            <div class="border 0 p-20">
+               
+                <svg xmlns="http://www.w3.org/2000/svg" width="65" height="60" fill="white" class="bi bi-broadcast justify-self-center bg-green-700 p-4 my-1 rounded" viewBox="0 0 16 16">
+                    <path d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707m2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 1 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708m5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708m2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707zM10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0"/>
+                  </svg><p class="text-xl text-gray-500 text-center font-bold mt-4">Nesciunt Mete</p>
+                  <p class="text-sm -mx-14 mt-3">There wasn't a whole lot he could do at that moment. He played the situation again and again in his head looking at what he might have done differently to make the situation better.</p>
+            
+        </div>
+        <!----------3-->
+        <div class="border 0 p-20">
+               
+            <svg xmlns="http://www.w3.org/2000/svg" width="65" height="60" fill="white" class="bi bi-easel justify-self-center bg-green-700 p-4 my-1 rounded" viewBox="0 0 16 16">
+                <path d="M8 0a.5.5 0 0 1 .473.337L9.046 2H14a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1.85l1.323 3.837a.5.5 0 1 1-.946.326L11.092 11H8.5v3a.5.5 0 0 1-1 0v-3H4.908l-1.435 4.163a.5.5 0 1 1-.946-.326L3.85 11H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h4.954L7.527.337A.5.5 0 0 1 8 0M2 3v7h12V3z"/>
+              </svg><p class="text-xl text-gray-500 text-center font-bold mt-4">Nesciunt Mete</p>
+              <p class="text-sm -mx-14 mt-3">There wasn't a whole lot he could do at that moment. He played the situation again and again in his head looking at what he might have done differently to make the situation better.</p>
+        
+    </div>
+    <!----------4-->
+    <div class="border 0 p-20">
+               
+        <svg xmlns="http://www.w3.org/2000/svg" width="65" height="60" fill="white" class="bi bi-crop justify-self-center bg-green-700 p-4 my-1 rounded " viewBox="0 0 16 16">
+            <path d="M3.5.5A.5.5 0 0 1 4 1v13h13a.5.5 0 0 1 0 1h-2v2a.5.5 0 0 1-1 0v-2H3.5a.5.5 0 0 1-.5-.5V4H1a.5.5 0 0 1 0-1h2V1a.5.5 0 0 1 .5-.5m2.5 3a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4H6.5a.5.5 0 0 1-.5-.5"/>
+          </svg><p class="text-xl text-gray-500 text-center font-bold mt-4">Nesciunt Mete</p>
+          <p class="text-sm -mx-14 mt-3">There wasn't a whole lot he could do at that moment. He played the situation again and again in his head looking at what he might have done differently to make the situation better.</p>
+    
+</div>
+<!----------5-->
+<div class="border 0 p-20">
+               
+    <svg xmlns="http://www.w3.org/2000/svg" width="65" height="60" fill="white" class="bi bi-activity justify-self-center bg-green-700 p-4 my-1 rounded" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2"/>
+      </svg><p class="text-xl text-gray-500 text-center font-bold mt-4">Nesciunt Mete</p>
+      <p class="text-sm -mx-14 mt-3">There wasn't a whole lot he could do at that moment. He played the situation again and again in his head looking at what he might have done differently to make the situation better.</p>
+
+</div>
+<!----------6-->
+            <div class="border 0 p-20">
+               
+                <svg xmlns="http://www.w3.org/2000/svg" width="65" height="60" fill="white" class="bi bi-activity justify-self-center bg-green-700 p-4 my-1 rounded" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2"/>
+                  </svg><p class="text-xl text-gray-500 text-center font-bold mt-4">Nesciunt Mete</p>
+                  <p class="text-sm -mx-14 mt-3">There wasn't a whole lot he could do at that moment. He played the situation again and again in his head looking at what he might have done differently to make the situation better.</p>
+            
+        </div>
+        </div>
+    </div>
+    </div>
+
 
 </body>
 </html>
