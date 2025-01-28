@@ -14,23 +14,48 @@
  <!-- Swiper JS -->
 
  <style>
-    .swiper-pagination-bullet{
-        background-color: gray;
-        width: 10px;
-        height: 10px;
-        border-color: green;
+      .swiper-pagination-bullet{
+        background-color: transparent;
+        width: 12px;
+        height: 12px;
+        border: 2px solid green;
+      } 
+      .swiper-pagination-bullet-active {
+  background: green;
+  border: none;
+} 
+#floating {
+    position: relative;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes 
+float {
+    0% {
+        transform: translateY(0);
     }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
  </style>
 </head>
 <body>
+    
  <!-----------------------Navbar----------------->
- <nav class="navbar py-4 flex flex:md text-gray-500 bg-white fixed">
-    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button></div>
- <h1 class="mx-72 font-bold text-3xl text-gray-500">enNo</h1>
+ <nav class="navbar py-4 flex flex:md text-gray-500 bg-white fixed w-full z-20">
+ <h1 class="lg:mx-60 xl:mx-72 font-bold text-3xl text-gray-500">enNo</h1>
+ <div class="lg:hidden sm:mx-96 md:mx-96 ms-36 w-full justify-end">
+    <button class="p-2 flex bg-green-600 rounded-lg text-center text-white text-md">Get started</button>
+  </div>
 
- <ul class=" px-44 flex flex:md sm:flex-row space-x-7 justify-center">
+  <!----------Desktop Menu-->
+ <ul class=" lg:px-44 lg:flex hidden  space-x-7 justify-center sm:hidden md:hidden ">
  <li class="cursor-pointer text-green-500">
  <a href="http://127.0.0.1:5500/dist/index.html">
  Home</li></a>
@@ -47,14 +72,45 @@
  <li class="cursor-pointer hover:text-green-500">
  <a href="http://127.0.0.1:5500/dist/index.html">
  Team</a></li>
- <li class="cursor-pointer hover:text-green-500">
- <button class="group relative ">
- Dropdown
+ <li class="relative group">
+    <a href="#" class="flex items-center text-gray-600 hover:text-green-500 transition">
+      Dropdown
+      <svg class="ml-1 w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+      </svg>
+    </a>
+    <ul
+      class="absolute left-0 mt-2 bg-white border border-gray-300 rounded shadow-lg w-48 hidden group-hover:block group-focus-within:block">
+      <li><a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Dropdown 1</a></li>
+
+      <li class="relative">
+        <a href="#" class="flex items-center block px-4 py-2 text-gray-600 hover:bg-gray-100 peer">
+          Deep Dropdown
+          <svg class="ml-1 w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </a>
+        <ul
+          class="absolute right-full top-0 mt-0 bg-white border border-gray-300 rounded shadow-lg w-48 hidden peer-hover:block peer-focus:block">
+          <li><a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Deep Dropdown 1</a></li>
+          <li><a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Deep Dropdown 2</a></li>
+          <li><a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Deep Dropdown 3</a></li>
+          <li><a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Deep Dropdown 4</a></li>
+          <li><a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Deep Dropdown 5</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Dropdown 2</a></li>
+      <li><a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Dropdown 3</a></li>
+      <li><a href="#" class="block px-4 py-2 text-gray-600 hover:bg-gray-100">Dropdown 4</a></li>
+    </ul>
+  </li>
  <div class="absolute top-full right-0 rounded-lg p-3 mt-1 shadow-md scale-y-0 group-focus:scale-y-100 origin-top duration-200">
  <ul>
  <li>
  <a href="http://127.0.0.1:5500/dist/index.html">Dashboard</a>
- 
  </li>
  <li>
  <a href="http://127.0.0.1:5500/dist/index.html">Setting</a>
@@ -73,8 +129,35 @@
 <li>
  <button class="px-4 flex border-collapse bg-green-600 rounded-full text-center p-1 mb-2 text-white text-md">Get started</button>
 </li></ul>
-<i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
- </nav>
+
+
+<div class="lg:hidden flex justify-end">
+    <label for="menu-toggle" class="cursor-pointer">
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </label>
+  </div>
+  
+  <input type="checkbox" id="menu-toggle" class="peer hidden">
+  <div class="peer-checked:block lg:hidden hidden absolute  bg-white p-6 sticky top-0 z-40">
+    <ul class="flex flex-col space-y-4 items-center text-gray-700 xl:hidden">
+      <li><a href="#" class="hover:text-green-500">Home</a></li>
+      <li><a href="#" class="hover:text-green-500">About</a></li>
+      <li><a href="#" class="hover:text-green-500">Services</a></li>
+      <li><a href="#" class="hover:text-green-500">Portfolio</a></li>
+      <li><a href="#" class="hover:text-green-500">Team</a></li>
+      <li><a href="#" class="hover:text-green-500">Dropdown</a></li>
+      <li><a href="#" class="hover:text-green-500">Contact</a></li>
+
+    </ul>
+  </div>
+  
+  
+
+
+</nav>
+
 <!----------------------Home Scetion------------------>
  <div class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 xl:grid-col-2 lg:mx-64 gap-0 pt-28" >
  <div class=" md:ms-10" data-aos="fade-up" data-aos-duration="1000">
@@ -90,7 +173,7 @@
  </svg><p class="mt-1">Watch Video</p></div></div>
  </div>
  </div>
- <img src="Images/hero-img.png" class="mr-96 mt-20 w-[576px] h-[550px]" data-aos="zoom-out" data-aos-duration="1000">
+ <img src="Images/hero-img.png" class="mr-96 mt-20 w-[576px] h-[550px]" id="floating" data-aos="zoom-out" data-aos-duration="1000">
  </div>
  
 
@@ -98,29 +181,34 @@
  
  
  <div class="grid lg:grid-cols-3 md:grid-cols-3 sm:grids-cols-1 xl:grid-cols-3  mt-20 gap-4 lg:mx-64">
-
- <div class=" bg-slate-50 text-gray-600 p-12" data-aos="fade-up" data-aos-duration="600">
- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 30 30" stroke="green" class="w-14 h-14">
- <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
- </svg>
- <h2 class="text-2xl font-bold">Magni Dolores</h2> 
+ <div class=" bg-slate-50 text-gray-600 p-12 py-10 " data-aos="fade-up" data-aos-duration="600" role="button">
+    <div class="service-item position-relative group">
+    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="green" class="bi bi-activity" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2"/>
+      </svg>
+ <h2 class="text-2xl font-bold pt-5 group-hover:text-green-500">Magni Dolores</h2> 
  <p class="pt-3">Excepteur sint Occaecat cupidatat non-proident,sunt in culpa qui officia</p>
  </div>
+</div>
 
- <div class=" bg-slate-50 text-gray-600 p-12" data-aos="fade-up" data-aos-duration="700">
+ <div class=" bg-slate-50 text-gray-600 p-12" data-aos="fade-up" data-aos-duration="700" role="button">
+    <div class="service-item position-relative group">
  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 30 30" stroke="green" class="w-14 h-14">
  <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
  </svg>
- <h2 class="text-2xl font-bold">Magni Dolores</h2> 
+ <h2 class="text-2xl font-bold group-hover:text-green-600">Magni Dolores</h2> 
  <p class="pt-3">Excepteur sint Occaecat cupidatat non-proident,sunt in culpa qui officia</p>
  </div>
+ </div>
 
- <div class=" bg-slate-50 text-gray-600 p-12" data-aos="fade-up" data-aos-duration="800">
+ <div class=" bg-slate-50 text-gray-600 p-12" data-aos="fade-up" data-aos-duration="800" role="button">
+    <div class="service-item position-relative group">
  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 30 30" stroke="green" class="w-14 h-14">
  <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
  </svg>
- <h2 class="text-2xl font-bold">Magni Dolores</h2> 
+ <h2 class="text-2xl font-bold group-hover:text-green-600">Magni Dolores</h2> 
  <p class="pt-3">Excepteur sint Occaecat cupidatat non-proident,sunt in culpa qui officia</p>
+ </div>
  </div>
  </div>
 
@@ -141,11 +229,19 @@
  <div class="relative">
  
  
- <img src="Images/about.png">
- <button class="absolute lg:absolute  top-1/2 left-1/2 flex items-center justify-center transform -translate-x-1/2 -translate-y-1/2 hover:fill-green-500">
-    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="green" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
-        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
-      </svg></button> 
+
+    <div class="relative">
+        <img src="Images/about.png">
+        <div class="absolute top-1/2 start-72">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="green" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+          </svg>
+          <span class="flex mx-3 -mt-7">
+            <span class="animate-ping absolute inline-flex h-10 w-10 rounded-full bg-green-500 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-10 w-10"></span>
+          </span>
+    </div>
+</div>
  </div>
  <div class="text-gray-500 lg:ms-12">
  <h1 class="text-3xl font-bold">Voluptatem dignission providing in the the main header section which is very easy</h1>
@@ -179,22 +275,27 @@
 
 
 <!-----------the number System -------------------->
-<div class="xl:mt-14 lg:mx-8 md:mx-24 ">
-<div class="grid 2xl:grid-cols-4 xl:grid-cols-4 grid-cols-1 lg:mx-52 px-7 md:mx-24 xl:gap-44">
- <h1 class="text-5xl text-green-600 font-bold">
- 232 <p class="text-base text-gray-400">clients</p> 
- </h1>
- <h1 class="text-5xl text-green-600 font-bold">
- 521 <p class="text-base text-gray-400 ">projects</p> 
- </h1>
- <h1 class="text-5xl text-green-600 font-bold">
- 1453 <p class="text-base text-gray-400">Hours of Support</p> 
- </h1>
- <h1 class="text-5xl text-green-600 font-bold">
- 32 <p class="text-base text-gray-400">Works</p> 
- </h1>
-</div>
-</div>
+<div class="xl:mt-14 lg:mx-8 md:mx-24">
+    <div class="grid 2xl:grid-cols-4 xl:grid-cols-4 grid-cols-1 lg:mx-52 px-7 md:mx-24 xl:gap-44">
+      <h1 class="text-5xl text-green-600 font-bold">
+        <span class="purecounter" data-purecounter-start="0" data-purecounter-end="232">232</span>
+        <p class="text-base text-gray-400">clients</p>
+      </h1>
+      <h1 class="text-5xl text-green-600 font-bold">
+        <span class="purecounter" data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="2">521</span>
+        <p class="text-base text-gray-400">projects</p>
+      </h1>
+      <h1 class="text-5xl text-green-600 font-bold">
+        <span class="purecounter" data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="2">1453</span>
+        <p class="text-base text-gray-400">Hours of Support</p>
+      </h1>
+      <h1 class="text-5xl text-green-600 font-bold">
+        <span class="purecounter" data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="2">32</span>
+        <p class="text-base text-gray-400">Works</p>
+      </h1>
+    </div>
+  </div>
+  
 
 <!---------------The services Section--------------------->
 <div class="lg:mt-40 md:mt-10">
@@ -608,9 +709,9 @@
 </div>
 </div>
 <!-------------testomonials-------------------->
-<div class="lg:mt-28 md:mt-20 sm:mt-10">
-    <div class= "text-gray-500 bg-gray-50 my-10 py-10 text-center">
-        <h1 class="text-5xl text-gray-100 font-bold -mb-5">TESTMONIALS</h1>
+<div class="lg:mt-28 md:mt-20 sm:mt-10" data-aos="fade-up" data-aos-duration="700">
+    <div class= "text-gray-500 bg-gray-50 my-10 py-7 text-center">
+    <h1 class="text-5xl text-gray-100 font-bold -mb-5">TESTMONIALS</h1>
      <h1 class="text-3xl font-bold">TESTMONIALS</h1>
      <p class="pt-4 text-black text-xl">
      Necessitation eius consequatur ex aliquid fuga eum quidum sint consequatur
@@ -733,20 +834,25 @@
         </div>
         </div>  
 
-        
         <div class="swiper-slide"></div>  
-        <div class="swiper-slide"></div>                                        
-    <div class=" pt-10">
+        <div class="swiper-slide"></div> 
+        
+    </div>  
+   
+      </div>
+      </div>
+
+      <div class="mt-10">                                   
         <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
             <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button"  aria-current="true">
             </span>
             <span class="swiper-pagination-bullet" tabindex="0" role="button"></span>
             <span class="swiper-pagination-bullet" tabindex="0" role="button"></span>
             <span class="swiper-pagination-bullet" tabindex="0" role="button"></span>
-        </div>
+        </div> 
     </div>
-      </div>
-      </div>
+
+
       </div>
       </div>
       <script>
@@ -772,13 +878,18 @@
             },
 
           },
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+            },
         });
+        
       </script>
     
 <!----------------call to Action ---------------->
 
 <div class="bg-green-500 py-24 mt-20">
- <div class="text-center text-white ">
+ <div class="text-center text-white" data-aos="zoom-out" data-aos-duration="900">
  <h1 class="text-3xl font-bold">Call to Action</h1>
  <p class="lg:mx-80 md:mx-32 my-3">What if dogs were racist? Would they care about fur color….. “son, only play with other tan dogs”? Or maybe it would depend on breed, “honey, only play with other German Shepards, never poodles”. 
  Better yet it could depend on occupation. “I’m a sled dog while you’re only a running companion, leave me alone”.</p>
@@ -789,7 +900,7 @@
 
 <!------Team Section----------------->
 <div class="lg:mt-20 md:mt-10">
- <div class= "text-gray-500 text-center py-0">
+ <div class= "text-gray-500 text-center py-0" data-aos="fade-up" data-aos-duration="500">
 <h1 class="text-5xl text-gray-100 font-bold -mb-5">SECTION TITLE</h1>
  <h1 class="text-3xl font-bold">TEAM</h1>
  <p class="pt-6 text-black text-xl">
@@ -797,9 +908,9 @@
  </p> </div>
  <div class="lg:mt-14">
  <div class="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 lg:mx-64 md:mx-10 gap-5">
- <div class="relative">
+ <div class="relative" data-aos="fade-up" data-aos-duration="700">
  <img src="Images/team-1.jpg">
- <div class="border shadow-lg bg-white text-gray-600 absolute -bottom-12 mx-4 px-4 py-3">
+ <div class="border shadow-lg bg-white text-gray-600 absolute -bottom-12 mx-8 px-5 py-3">
  <h1 class="text-lg font-bold">Walter White</h1>
  <hr class="w-14 border-[black] mt-2">
  <div class="flex space-x-1">
@@ -829,9 +940,9 @@
  </div>
  </div>
  <div>
- <div class="relative">
+ <div class="relative" data-aos="fade-up" data-aos-duration="800">
  <img src="Images/team-2.jpg">
- <div class="border shadow-lg bg-white text-gray-600 absolute -bottom-12 mx-4 px-4 py-3">
+ <div class="border shadow-lg bg-white text-gray-600 absolute -bottom-12 mx-8 px-5 py-3">
  <h1 class="text-lg font-bold">Walter White</h1>
  <hr class="w-14 border-[black] mt-2">
  <div class="flex space-x-1">
@@ -862,9 +973,9 @@
  </div>
  </div>
  <div>
- <div class="relative">
+ <div class="relative" data-aos="fade-up" data-aos-duration="900">
  <img src="Images/team-3.jpg">
- <div class="border shadow-lg bg-white text-gray-600 absolute -bottom-12 mx-4 px-4 py-3">
+ <div class="border shadow-lg bg-white text-gray-600 absolute -bottom-12 mx-8 px-5 py-3">
  <h1 class="text-lg font-bold">Walter White</h1>
  <hr class="w-14 border-[black] mt-2">
  <div class="flex space-x-1">
@@ -900,7 +1011,7 @@
 
 <!--------------Contact Page ------------------>
 <div class="bg-gray-50">
-<div class="lg:mt-40 md:mt-10 ">
+<div class="lg:mt-40 md:mt-10" data-aos="fade-up" data-aos-duration="500">
     <div class= "text-gray-500  text-center py-7">
         <h1 class="text-5xl text-gray-100 font-bold -mb-5">SECTION TITLE</h1>
     <h1 class="text-3xl font-bold">CONTACT</h1>
@@ -913,7 +1024,7 @@
 <div class="grid lg:grid-cols-5 xl:grid-cols-5 md:grid-cols-5 sm:grid-col-1 lg:mx-64 gap-6 py-10">
 <!---------------map section------------->
 
-    <div class="xl:col-span-2 lg:col-span-5 md:col-span-2 item-start">
+    <div class="xl:col-span-2 lg:col-span-5 md:col-span-2 item-start" data-aos="fade-up" data-aos-duration="800">
         <div class="border shadow bg-white space-y-7 px-5 py-11">
 
 
@@ -968,26 +1079,26 @@
          </div>
     
 <!-------------------section 2---------->
-<div class="grid xl:col-span-3 lg:col-span-5 md:col-span-3">
+<div class="grid xl:col-span-3 lg:col-span-5 md:col-span-3" data-aos="fade-up" data-aos-duration="900">
     <div class="border bg-white shadow py-6 px-10">
         <form>
             <div class="grid gap-6 mb-6 md:grid-cols-2 ">
                 <div>
                     <label for="first_name" class="block mb-2 text-base">Your name</label>
-                    <input type="text" id="first_name" class="border border-gray-300 text-gray-900 text-sm block w-full p-2.5" />
+                    <input type="text" id="first_name" class=" border outline-none hover:border-green-700 text-gray-900 text-sm block w-full p-2.5" />
                 </div>
                 <div>
                     <label for="last_name" class="block mb-2 text-base">Your name</label>
-                    <input type="text" id="last_name" class="border border-gray-300 text-gray-900 text-sm block w-full p-2.5"/>
+                    <input type="text" id="last_name" class="border outline-none hover:border-green-700 text-gray-900 text-sm block w-full p-2.5"/>
                 </div>
             </div>
             <div class="mb-6">
                 <label for="email" class="block mb-2 text-base text-gray-900">Subject</label>
-                <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+                <input type="email" id="email" class="bg-gray-50 border outline-none hover:border-green-700 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
             </div> 
             <div class="mb-6">
                 <label for="email" class="block mb-2 text-base text-gray-900">Message</label>
-                <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full h-56 p-2.5">
+                <input type="email" id="email" class="bg-gray-50 border outline-none hover:border-green-700 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full h-56 p-2.5">
             </div> 
  
 
@@ -1125,15 +1236,14 @@
 <!----------------------------------Copyright Section---------------------------->
 <div class="my-10 mx-56">
 <hr>
-<div class=" w-full">
+</div>
+<div class="mx-10">
 <p class="text-center mb-0"> @ Copyright <b>eNno</b> All Rights Reserved</p>
  <p class="fs-8 text-center mt-0"> Designed by <span class="text-green-600">BootstrapMade</span> Distributed by <span class="text-green-600"> ThemeWagon </span></p>
  </div>
 
- <div class="relative">
- <div class="rounded-full flex justify-end items-end bottom-0 size-1 transition-transform duration-500 transform translateY-full hover:opacity-100 hover:translateY-0">
- <a href="http://127.0.0.1:5500/dist/index.html">
- <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="green" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+<div class="rounded-full shadow-lg fixed bottom-5 right-5 cursor-pointer hover" onclick="window.scrollTo({top:0, behavior:'smooth'});">
+ <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="green" class="bi bi-arrow-up-square-fill rounded-full" viewBox="0 0 16 16">
  <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0"/>
  </svg></a>
 </div>
@@ -1146,5 +1256,13 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>AOS.init();</script>
 
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+
+        <script>
+            new PureCounter();
+        </script>
 
 </html>
