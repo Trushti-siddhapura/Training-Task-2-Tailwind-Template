@@ -48,14 +48,12 @@ float {
 <body>
     
  <!-----------------------Navbar----------------->
- <nav class="navbar py-4 flex flex:md text-gray-500 bg-white fixed w-full z-20">
- <h1 class="lg:mx-60 xl:mx-72 font-bold text-3xl text-gray-500">enNo</h1>
- <div class="lg:hidden sm:mx-96 md:mx-96 ms-36 w-full justify-end">
-    <button class="p-2 flex bg-green-600 rounded-lg text-center text-white text-md">Get started</button>
-  </div>
+ <nav class="navbar  flex flex:md text-gray-500 bg-white fixed w-full border py-5 shadow-lg z-20">
+ <h1 class="lg:mx-32  2xl:mx-72 xl:mx-52 font-bold text-3xl text-gray-500">enNo</h1>
+ 
 
   <!----------Desktop Menu-->
- <ul class=" lg:px-44 lg:flex hidden  space-x-7 justify-center sm:hidden md:hidden ">
+ <ul class=" lg:px-44 xl:flex hidden  space-x-7 justify-center sm:hidden md:hidden lg:hidden">
  <li class="cursor-pointer text-green-500">
  <a href="http://127.0.0.1:5500/dist/index.html">
  Home</li></a>
@@ -131,16 +129,21 @@ float {
 </li></ul>
 
 
-<div class="lg:hidden flex justify-end">
+<div class="xl:hidden flex md:ms-auto md:me-3  sm:ms-auto sm:mx-60 sm:pe-96">
     <label for="menu-toggle" class="cursor-pointer">
+        <div class="flex lg:mx-96 xl:mx-72 md:mx-56 sm:mx-80 mx-28  md:ps-auto">
+        <div class="xl:hidden mx-5">
+            <button class="flex  px-3 py-1 w-28 bg-green-600 rounded-full text-center text-white text-sm">Get started</button>
+          </div>
         <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
         </svg>
+    </div>
     </label>
   </div>
   
   <input type="checkbox" id="menu-toggle" class="peer hidden">
-  <div class="peer-checked:block lg:hidden hidden absolute  bg-white p-6 sticky top-0 z-40">
+  <div class="peer-checked:block lg:hidden hidden absolute w-full bg-white p-6  top-0 z-40">
     <ul class="flex flex-col space-y-4 items-center text-gray-700 xl:hidden">
       <li><a href="#" class="hover:text-green-500">Home</a></li>
       <li><a href="#" class="hover:text-green-500">About</a></li>
@@ -159,18 +162,18 @@ float {
 </nav>
 
 <!----------------------Home Scetion------------------>
- <div class="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 xl:grid-col-2 lg:mx-64 gap-0 pt-28" >
+ <div class="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 xl:grid-col-2 2xl:mx-52 lg:mx-10 gap-0 pt-28" >
  <div class=" md:ms-10" data-aos="fade-up" data-aos-duration="1000">
- <div class="text-gray-500">
+ <div class="text-gray-500 mx-4">
  <h1 class="font-bold text-5xl pb-5 mt-60">Elegent and creative solutions</h1>
  <p class="w-100 pb-5">We are team of talented designers making websites with bootstrap </p>
  <div class="flex">
  <button class="px-4 flex border-collapse bg-green-600 rounded-full text-center p-3 w-32 mb-2 text-white text-md">Get started</button>
- <div class="px-5 pt-1 flex">
+ <div class="px-5 pt-1 flex group ">
  <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="green">
  <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
  <path strokeLinecap="round" strokeLinejoin="round" d="M15.91 11.672a.375.375 0 0 1 0 .656l-5.603 3.113a.375.375 0 0 1-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112Z" />
- </svg><p class="mt-1">Watch Video</p></div></div>
+ </svg><p class="mt-1 group-hover:text-green-600" role="button">Watch Video</p></div></div>
  </div>
  </div>
  <img src="Images/hero-img.png" class="mr-96 mt-20 w-[576px] h-[550px]" id="floating" data-aos="zoom-out" data-aos-duration="1000">
@@ -180,9 +183,10 @@ float {
  <!-------------The cards System---------------->
  
  
- <div class="grid lg:grid-cols-3 md:grid-cols-3 sm:grids-cols-1 xl:grid-cols-3  mt-20 gap-4 lg:mx-64">
- <div class=" bg-slate-50 text-gray-600 p-12 py-10 " data-aos="fade-up" data-aos-duration="600" role="button">
-    <div class="service-item position-relative group">
+ <div class="grid lg:grid-cols-3 md:grid-cols-1 sm:grids-cols-1 xl:grid-cols-3  mt-20 gap-4 2xl:mx-60 xl:mx-64 lg:mx-20 md:mx-10 mx-4">
+    <div class="group">
+ <div class=" bg-slate-50 text-gray-600 p-12  group-hover:-translate-y-5" data-aos="fade-up" data-aos-duration="600" role="button">
+    <div class="service-item position-relative group transform transition-transform duration-500">
     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="green" class="bi bi-activity" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2"/>
       </svg>
@@ -190,9 +194,11 @@ float {
  <p class="pt-3">Excepteur sint Occaecat cupidatat non-proident,sunt in culpa qui officia</p>
  </div>
 </div>
+</div>
 
- <div class=" bg-slate-50 text-gray-600 p-12" data-aos="fade-up" data-aos-duration="700" role="button">
-    <div class="service-item position-relative group">
+<div class="group">
+ <div class=" bg-slate-50 text-gray-600 p-12 group-hover:-translate-y-5" data-aos="fade-up" data-aos-duration="700" role="button">
+    <div class="service-item position-relative group transform transition-transform duration-500">
  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 30 30" stroke="green" class="w-14 h-14">
  <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
  </svg>
@@ -200,9 +206,10 @@ float {
  <p class="pt-3">Excepteur sint Occaecat cupidatat non-proident,sunt in culpa qui officia</p>
  </div>
  </div>
-
- <div class=" bg-slate-50 text-gray-600 p-12" data-aos="fade-up" data-aos-duration="800" role="button">
-    <div class="service-item position-relative group">
+</div>
+<div class="group">
+ <div class=" bg-slate-50 text-gray-600 p-12 group-hover:-translate-y-5" data-aos="fade-up" data-aos-duration="800" role="button">
+    <div class="service-item position-relative group transform transition-transform duration-500">
  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 30 30" stroke="green" class="w-14 h-14">
  <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
  </svg>
@@ -210,6 +217,7 @@ float {
  <p class="pt-3">Excepteur sint Occaecat cupidatat non-proident,sunt in culpa qui officia</p>
  </div>
  </div>
+</div>
  </div>
 
 <!-----------About Section-------------> 
@@ -225,7 +233,7 @@ float {
  </div>
  </div>
 <!------------inside About Scetion-------------->
- <div class="grid lg:grid-cols-1 md:grid-cols-2 sm:grid-cols-1 lg:mt-14 xl:grid-cols-2  md:mt-10 lg:mx-64" data-aos="fade-up" data-aos-duration="800">
+ <div class="grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 lg:mt-14 xl:grid-cols-2 2xl:mx-60 sm:mx-20 md:mt-10 xl:mx-64 lg:mx-20" data-aos="fade-up" data-aos-duration="800">
  <div class="relative">
  
  
@@ -243,7 +251,7 @@ float {
     </div>
 </div>
  </div>
- <div class="text-gray-500 lg:ms-12">
+ <div class="text-gray-500 lg:ms-12 mx-5">
  <h1 class="text-3xl font-bold">Voluptatem dignission providing in the the main header section which is very easy</h1>
  <p class="mt-5 text-black text-lg">If you're looking for random paragraphs, you've come to the right place. When a random word or a random sentence isn't quite enough</p>
  <div class="mt-3 text-black">
@@ -275,26 +283,28 @@ float {
 
 
 <!-----------the number System -------------------->
-<div class="xl:mt-14 lg:mx-8 md:mx-24">
-    <div class="grid 2xl:grid-cols-4 xl:grid-cols-4 grid-cols-1 lg:mx-52 px-7 md:mx-24 xl:gap-44">
-      <h1 class="text-5xl text-green-600 font-bold">
+<div class="xl:mt-14 lg:mx-8 md:mx-24 mx-32 space-y-10">
+    <div class="grid 2xl:grid-cols-4 xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-2  grid-cols-1 lg:mx-10 xl:mx-52 sm:mx-32 px-7 md:mx-1 xl:gap-44">
+
+      <h1 class="text-5xl text-green-600 font-bold my-10 md:mx-10">
         <span class="purecounter" data-purecounter-start="0" data-purecounter-end="232">232</span>
         <p class="text-base text-gray-400">clients</p>
       </h1>
-      <h1 class="text-5xl text-green-600 font-bold">
+      <h1 class="text-5xl text-green-600 font-bold my-10 ">
         <span class="purecounter" data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="2">521</span>
         <p class="text-base text-gray-400">projects</p>
       </h1>
-      <h1 class="text-5xl text-green-600 font-bold">
+      <h1 class="text-5xl text-green-600 font-bold my-10 md:mx-10">
         <span class="purecounter" data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="2">1453</span>
         <p class="text-base text-gray-400">Hours of Support</p>
       </h1>
-      <h1 class="text-5xl text-green-600 font-bold">
+      <h1 class="text-5xl text-green-600 font-bold my-10 md:mx-10">
         <span class="purecounter" data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="2">32</span>
         <p class="text-base text-gray-400">Works</p>
       </h1>
     </div>
   </div>
+</div>
   
 
 <!---------------The services Section--------------------->
@@ -302,13 +312,13 @@ float {
  <div class= "text-gray-500 text-center bg-gray-50 py-10" data-aos="fade-up" data-aos-duration="200">
 <h1 class="text-5xl text-gray-200 font-bold -mb-4">SERVICES</h1>
  <h1 class="text-3xl font-bold">SERVICES</h1>
- <p class="pt-4 text-black text-xl">
+ <p class="pt-4 text-black text-xl pb-10">
  Necessitation eius consequatur ex aliquid fuga eum quidum sint consequatur
  </p>
 <!----------1-->
-<div class=" lg:mx-20 xl:mx-80 2xl:mx-64 lg:my-12" data-aos="fade-up" data-aos-duration="500">
- <div class="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 xl:grid-cols-3 2xl:grid-cols-3 gap-7  justify-center">
- <div class="border-2 border-gray-300 p-20 hover:border-green-500">
+<div class=" lg:mx-10 xl:mx-20 2xl:mx-60 md:mx-5 sm:mx-20 lg:my-12" data-aos="fade-up" data-aos-duration="500">
+ <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 lg:mx-10 xl:grid-cols-3 2xl:grid-cols-3 gap-7 mx-4 justify-center">
+ <div class="border-2 bg-white border-gray-300 p-20 hover:border-green-500">
  
  <svg xmlns="http://www.w3.org/2000/svg" width="65" height="60" fill="white" class="bi bi-activity justify-self-center bg-green-700 p-4 my-1 rounded" viewBox="0 0 16 16">
  <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2"/>
@@ -317,7 +327,7 @@ float {
  <!----------2--> 
  </div>
 
- <div class="border-2 border-gray-300 p-20 hover:border-green-500" data-aos="fade-up" data-aos-duration="600">
+ <div class="border-2 bg-white border-gray-300 p-20 hover:border-green-500" data-aos="fade-up" data-aos-duration="600">
  
  <svg xmlns="http://www.w3.org/2000/svg" width="65" height="60" fill="white" class="bi bi-broadcast justify-self-center bg-green-700 p-4 my-1 rounded" viewBox="0 0 16 16">
  <path d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707m2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 1 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708m5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708m2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707zM10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0"/>
@@ -326,7 +336,7 @@ float {
  
  </div>
  <!----------3-->
- <div class="border-2 border-gray-300 p-20 hover:border-green-500" data-aos="fade-up" data-aos-duration="700">
+ <div class="border-2 bg-white border-gray-300 p-20 hover:border-green-500" data-aos="fade-up" data-aos-duration="700">
  
  <svg xmlns="http://www.w3.org/2000/svg" width="65" height="60" fill="white" class="bi bi-easel justify-self-center bg-green-700 p-4 my-1 rounded" viewBox="0 0 16 16">
  <path d="M8 0a.5.5 0 0 1 .473.337L9.046 2H14a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1.85l1.323 3.837a.5.5 0 1 1-.946.326L11.092 11H8.5v3a.5.5 0 0 1-1 0v-3H4.908l-1.435 4.163a.5.5 0 1 1-.946-.326L3.85 11H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h4.954L7.527.337A.5.5 0 0 1 8 0M2 3v7h12V3z"/>
@@ -335,7 +345,7 @@ float {
  
  </div>
  <!----------4-->
- <div class="border-2 border-gray-300 p-20 hover:border-green-500" data-aos="fade-up" data-aos-duration="800">
+ <div class="border-2 bg-white border-gray-300 p-20 hover:border-green-500" data-aos="fade-up" data-aos-duration="800">
  
  <svg xmlns="http://www.w3.org/2000/svg" width="65" height="60" fill="white" class="bi bi-crop justify-self-center bg-green-700 p-4 my-1 rounded " viewBox="0 0 16 16">
  <path d="M3.5.5A.5.5 0 0 1 4 1v13h13a.5.5 0 0 1 0 1h-2v2a.5.5 0 0 1-1 0v-2H3.5a.5.5 0 0 1-.5-.5V4H1a.5.5 0 0 1 0-1h2V1a.5.5 0 0 1 .5-.5m2.5 3a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4H6.5a.5.5 0 0 1-.5-.5"/>
@@ -343,8 +353,8 @@ float {
  <p class="text-sm -mx-14 mt-3">There wasn't a whole lot he could do at that moment. He played the situation again and again in his head looking at what he might have done differently to make the situation better.</p>
  
 </div>
-<!----------5-->
-<div class="border-2 border-gray-300 p-20 hover:border-green-500" data-aos="fade-up" data-aos-duration="900">
+<!----------5--> 
+<div class="border-2 bg-white border-gray-300 p-20 hover:border-green-500" data-aos="fade-up" data-aos-duration="900">
  
  <svg xmlns="http://www.w3.org/2000/svg" width="65" height="60" fill="white" class="bi bi-calendar-week justify-self-center bg-green-700 p-4 my-1 rounded " viewBox="0 0 16 16">
  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z"/>
@@ -354,7 +364,7 @@ float {
 
 </div>
 <!----------6-->
- <div class="border-2 border-gray-300 p-20 hover:border-green-500" data-aos="fade-up" data-aos-duration="1000">
+ <div class="border-2 bg-white border-gray-300 p-20 hover:border-green-500" data-aos="fade-up" data-aos-duration="1000">
  
  <svg xmlns="http://www.w3.org/2000/svg" width="65" height="60" fill="white" class="bi bi-activity justify-self-center bg-green-700 p-4 my-1 rounded" viewBox="0 0 16 16">
  <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2"/>
@@ -385,7 +395,7 @@ float {
  </div>
 <!-----------pictures-------------->
 <div class="mt-5">
-<div class="grid lg:grid-cols-3 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 lg:mx-64 md:mx-24 gap-7" data-aos="fade-up" data-aos-duration="1000">
+<div class="grid lg:grid-cols-3 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 lg:mx-10 sm:mx-20 xl:mx-60 md:mx-10 mx-4 gap-7" data-aos="fade-up" data-aos-duration="1000">
 <div class="flex">
  <div class="group relative">   
  <img src="Images/app-1.jpg" class="group-hover:opacity-100 transition-opacity"> 
@@ -713,10 +723,10 @@ float {
     <div class= "text-gray-500 bg-gray-50 my-10 py-7 text-center">
     <h1 class="text-5xl text-gray-100 font-bold -mb-5">TESTMONIALS</h1>
      <h1 class="text-3xl font-bold">TESTMONIALS</h1>
-     <p class="pt-4 text-black text-xl">
+     <p class="pt-4 text-black text-xl mx-5">
      Necessitation eius consequatur ex aliquid fuga eum quidum sint consequatur
      </p>
-<div class="swiper mySwiper lg:mx-80 mt-20">
+<div class="swiper mySwiper lg:mx-10 2xl:mx-60 md:mx-10 sm:mx-20 mt-20 mx-4">
 <div class="swiper-wrapper">
 <div class="swiper-slide">
 <div class="border shadow text-gray-500 bg-gray-100 py-2">
@@ -728,10 +738,10 @@ float {
             It had become a far too common an event in her life. 
         She has specifically placed the key to the box in a special.
         exactly where it was when the key.
-        <div class="flex justify-end lg:mx-24 -mt-28 mb-14">
-        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="green" class="bi bi-quote" viewBox="0 0 16 16">
+        <span class="inline-flex"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="green" class="bi bi-quote" viewBox="0 0 16 16">
             <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
-            </svg></div></p></div>
+            </svg></span>
+                </div></p>
         
         <div class="-mt-10">
         <div class="rounded-full mx-4 items-start">
@@ -751,10 +761,10 @@ float {
                 It had become a far too common an event in her life. 
             She has specifically placed the key to the box in a special.
             exactly where it was when the key.
-            <div class="flex justify-end lg:mx-24 -mt-28 mb-14">
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="green" class="bi bi-quote" viewBox="0 0 16 16">
+            <span class="inline-flex"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="green" class="bi bi-quote" viewBox="0 0 16 16">
                 <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
-                </svg></div></p></div>
+                </svg></span>
+                    </div></p>
             
             <div class="-mt-10">
             <div class="rounded-full mx-4 items-start">
@@ -774,10 +784,10 @@ float {
                 It had become a far too common an event in her life. 
             She has specifically placed the key to the box in a special.
             exactly where it was when the key.
-            <div class="flex justify-end lg:mx-24 -mt-28 mb-14">
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="green" class="bi bi-quote" viewBox="0 0 16 16">
+            <span class="inline-flex"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="green" class="bi bi-quote" viewBox="0 0 16 16">
                 <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
-                </svg></div></p></div>
+                </svg></span>
+                    </div></p>
             
             <div class="-mt-10">
             <div class="rounded-full mx-4 items-start">
@@ -797,10 +807,10 @@ float {
                     It had become a far too common an event in her life. 
                 She has specifically placed the key to the box in a special.
                 exactly where it was when the key.
-                <div class="flex justify-end lg:mx-24 -mt-28 mb-14">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="green" class="bi bi-quote" viewBox="0 0 16 16">
+                <span class="inline-flex"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="green" class="bi bi-quote" viewBox="0 0 16 16">
                     <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
-                    </svg></div></p></div>
+                    </svg></span>
+                        </div></p>
                 
                 <div class="-mt-10">
                 <div class="rounded-full mx-4 items-start">
@@ -820,10 +830,10 @@ float {
                 It had become a far too common an event in her life. 
             She has specifically placed the key to the box in a special.
             exactly where it was when the key.
-            <div class="flex justify-end lg:mx-24 -mt-28 mb-14">
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="green" class="bi bi-quote" viewBox="0 0 16 16">
-                <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
-                </svg></div></p></div>
+       <span class="inline-flex"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="green" class="bi bi-quote" viewBox="0 0 16 16">
+        <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
+        </svg></span>
+            </div></p>
             
             <div class="-mt-10">
             <div class="rounded-full mx-4 items-start">
@@ -833,9 +843,6 @@ float {
             </div>
         </div>
         </div>  
-
-        <div class="swiper-slide"></div>  
-        <div class="swiper-slide"></div> 
         
     </div>  
    
@@ -869,7 +876,7 @@ float {
               spaceBetween: 20,
             },
             768: {
-              slidesPerView: 2,
+              slidesPerView: 1,
               spaceBetween: 40,
             },
             1024: {
@@ -878,6 +885,7 @@ float {
             },
 
           },
+          loop:true,
           autoplay: {
             delay: 2500,
             disableOnInteraction: false,
@@ -887,15 +895,21 @@ float {
       </script>
     
 <!----------------call to Action ---------------->
+<div class="bg-green-500 py-16">
+    <div class="max-w-6xl mx-auto px-6 md:px-8 lg:px-12">
+      <div class="text-center" data-aos="zoom-in" data-aos-duration="1000">
+        <h2 class="text-2xl font-bold mb-4 text-white">Call To Action</h2>
+        <p class="text-white mb-8">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat quae, veritatis
+          optio perspiciatis veniam vel aperiam dolorem praesentium laborum ipsum.
+          and services!</p>
 
-<div class="bg-green-500 py-24 mt-20">
- <div class="text-center text-white" data-aos="zoom-out" data-aos-duration="900">
- <h1 class="text-3xl font-bold">Call to Action</h1>
- <p class="lg:mx-80 md:mx-32 my-3">What if dogs were racist? Would they care about fur color….. “son, only play with other tan dogs”? Or maybe it would depend on breed, “honey, only play with other German Shepards, never poodles”. 
- Better yet it could depend on occupation. “I’m a sled dog while you’re only a running companion, leave me alone”.</p>
- <button type="button" class="border-2 border-white rounded-full p-3 px-9">Call To Action</button>
- </div>
-</div>
+        <button type="submit"
+          class=" border-2 text-lg border-white text-white w-full sm:w-auto px-7 py-2 rounded-full hover:bg-green-600 focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition ease-in-out duration-300 " onclick="window.scrollTo({top:0, behavior:'smooth'});">
+          Call To Action
+        </button>
+      </div>
+    </div>
+  </div>
 
 
 <!------Team Section----------------->
@@ -903,14 +917,14 @@ float {
  <div class= "text-gray-500 text-center py-0" data-aos="fade-up" data-aos-duration="500">
 <h1 class="text-5xl text-gray-100 font-bold -mb-5">SECTION TITLE</h1>
  <h1 class="text-3xl font-bold">TEAM</h1>
- <p class="pt-6 text-black text-xl">
+ <p class="pt-6 text-black text-xl mb-10">
  Necessitation eius consequatur ex aliquid fuga eum quidum sint consequatur
  </p> </div>
  <div class="lg:mt-14">
- <div class="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 lg:mx-64 md:mx-10 gap-5">
- <div class="relative" data-aos="fade-up" data-aos-duration="700">
+ <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1  lg:mx-10 md:mx-10 2xl:mx-60 sm:mx-20 mx-4 gap-5">
+ <div class="relative mb-7" data-aos="fade-up" data-aos-duration="700">
  <img src="Images/team-1.jpg">
- <div class="border shadow-lg bg-white text-gray-600 absolute -bottom-12 mx-8 px-5 py-3">
+ <div class="border shadow-lg bg-white text-gray-600 absolute -bottom-12  mx-4 w-[93%]  xl:mx-8 xl:w-[87%] lg:mx-3 lg:w-[92%] md:mx-4 md:w[65%] sm:mx-2 sm:w[44%] px-5 py-3">
  <h1 class="text-lg font-bold">Walter White</h1>
  <hr class="w-14 border-[black] mt-2">
  <div class="flex space-x-1">
@@ -940,9 +954,9 @@ float {
  </div>
  </div>
  <div>
- <div class="relative" data-aos="fade-up" data-aos-duration="800">
+ <div class="relative mb-7" data-aos="fade-up" data-aos-duration="800">
  <img src="Images/team-2.jpg">
- <div class="border shadow-lg bg-white text-gray-600 absolute -bottom-12 mx-8 px-5 py-3">
+ <div class="border shadow-lg bg-white text-gray-600 absolute -bottom-12 mx-4 w-[93%]  xl:mx-8 xl:w-[87%] lg:mx-3 lg:w-[92%] md:mx-4 md:w[65%] sm:mx-2 sm:w[44%] px-5 py-3">
  <h1 class="text-lg font-bold">Walter White</h1>
  <hr class="w-14 border-[black] mt-2">
  <div class="flex space-x-1">
@@ -973,9 +987,9 @@ float {
  </div>
  </div>
  <div>
- <div class="relative" data-aos="fade-up" data-aos-duration="900">
+ <div class="relative mb-7" data-aos="fade-up" data-aos-duration="900">
  <img src="Images/team-3.jpg">
- <div class="border shadow-lg bg-white text-gray-600 absolute -bottom-12 mx-8 px-5 py-3">
+ <div class="border shadow-lg bg-white text-gray-600 absolute -bottom-12 mx-4 w-[93%]  xl:mx-8 xl:w-[87%] lg:mx-3 lg:w-[92%] md:mx-4 md:w[65%] sm:mx-2 sm:w[44%] px-5 py-3">
  <h1 class="text-lg font-bold">Walter White</h1>
  <hr class="w-14 border-[black] mt-2">
  <div class="flex space-x-1">
@@ -1010,7 +1024,7 @@ float {
  </div>
 
 <!--------------Contact Page ------------------>
-<div class="bg-gray-50">
+
 <div class="lg:mt-40 md:mt-10" data-aos="fade-up" data-aos-duration="500">
     <div class= "text-gray-500  text-center py-7">
         <h1 class="text-5xl text-gray-100 font-bold -mb-5">SECTION TITLE</h1>
@@ -1021,10 +1035,10 @@ float {
     </div>
    </div>
 
-<div class="grid lg:grid-cols-5 xl:grid-cols-5 md:grid-cols-5 sm:grid-col-1 lg:mx-64 gap-6 py-10">
+<div class="grid lg:grid-cols-5 xl:grid-cols-5 md:grid-cols-5 sm:grid-col-1 mb-10 2xl:mx-60 lg:mx-10 md:mx-10 sm:mx-20 mx-4 gap-6 py-10">
 <!---------------map section------------->
 
-    <div class="xl:col-span-2 lg:col-span-5 md:col-span-2 item-start" data-aos="fade-up" data-aos-duration="800">
+    <div class="xl:col-span-2 lg:col-span-2 md:col-span-5 item-start" data-aos="fade-up" data-aos-duration="800">
         <div class="border shadow bg-white space-y-7 px-5 py-11">
 
 
@@ -1079,7 +1093,7 @@ float {
          </div>
     
 <!-------------------section 2---------->
-<div class="grid xl:col-span-3 lg:col-span-5 md:col-span-3" data-aos="fade-up" data-aos-duration="900">
+<div class="grid xl:col-span-3 lg:col-span-3 md:col-span-5" data-aos="fade-up" data-aos-duration="900">
     <div class="border bg-white shadow py-6 px-10">
         <form>
             <div class="grid gap-6 mb-6 md:grid-cols-2 ">
@@ -1106,7 +1120,6 @@ float {
 </div>
 </div>
 </div>
-</div>
 
 <!------------join out newsletter---------->
 <div class="bg-gray-50 py-14 text-center">
@@ -1118,14 +1131,12 @@ float {
  <button type="button" class="bg-green-600 text-white rounded-full py-2 px-7 -ml-10 sm:">Subscribe</button>
 
 </div>
-</div>
-</div>
 
 
 <!------------footer Section------------>
-<div class="grid xl:grid-cols-4 lg:grid-cols-2 md:grid-cold-2 sm:grid-cols-1 grid-cols-1 sm:mx-10 space-y-4 lg:mx-64 my-10">
-    <div class="space-y-4 ">
-    <h1 class="text-gray-500 text-2xl font-bold">eNno</h1>
+<div class="grid xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 sm:mx-10 space-y-4 2xl:mx-60 lg:mx-10 py-10 ">
+    <div class="space-y-4 lg:mt-3">
+    <h1 class="text-gray-500 text-2xl font-bold ">eNno</h1>
     <p class="w-40 text-sm">A 108 Adam Street New your,NY 535022</p>
     <p class="font-bold text-gray-600 mb-0 text-sm">Phone:<span class="text-gray-400">+1 845974558625</span></p>
     <p class="font-bold text-gray-600 text-sm -mb-8">Email:<span class="text-gray-400">info@example.com</span></p>
@@ -1133,32 +1144,40 @@ float {
    
    
    <!------------section 1------------------->
-   <div class="text-lg text-gray-500 xl:ps-32 lg:pt-0 space-y-4 sm:pt-6 md:pt-6">
+   <div class="text-lg text-gray-500 xl:ps-32 lg:ps-36 lg:pt-0 space-y-4 sm:pt-6 md:pt-6">
     <h1 class="w-72 font-bold">Useful links</h1>
     <ul class="text-sm text-gray-500 space-y-2">
     <li class="flex">
     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="green" class="bi bi-chevron-right pt-1" viewBox="0 0 16 16">
     <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
     </svg>
+    <a href="http://127.0.0.1:5500/dist/index.html" class="hover:text-green-400">
     Home
+</a>
     </li>
     <li class="flex">
     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="green" class="bi bi-chevron-right pt-1" viewBox="0 0 16 16">
     <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
     </svg>
+    <a href="http://127.0.0.1:5500/dist/index.html" class="hover:text-green-400">
     About Us
+    </a>
     </li>
     <li class="flex">
     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="green" class="bi bi-chevron-right pt-1" viewBox="0 0 16 16">
     <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
     </svg>
+    <a href="http://127.0.0.1:5500/dist/index.html" class="hover:text-green-400">
     Services
+    </a>
     </li>
     <li class="flex">
     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="green" class="bi bi-chevron-right pt-1" viewBox="0 0 16 16">
     <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
     </svg>
+    <a href="http://127.0.0.1:5500/dist/index.html" class="hover:text-green-400">
     Terms of Services
+    </a>
     </li>
     </ul>
    </div>
@@ -1172,25 +1191,33 @@ float {
     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="green" class="bi bi-chevron-right pt-1" viewBox="0 0 16 16">
     <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
     </svg>
+    <a href="http://127.0.0.1:5500/dist/index.html" class="hover:text-green-400">
     Web Design
+    </a>
     </li>
     <li class="flex">
     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="green" class="bi bi-chevron-right pt-1" viewBox="0 0 16 16">
     <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
     </svg>
+    <a href="http://127.0.0.1:5500/dist/index.html" class="hover:text-green-400">
     Web Developemnet
+    </a>
     </li>
     <li class="flex">
     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="green" class="bi bi-chevron-right pt-1" viewBox="0 0 16 16">
     <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
     </svg>
+    <a href="http://127.0.0.1:5500/dist/index.html" class="hover:text-green-400">
     Profuce of Management
+    </a>
     </li>
     <li class="flex">
     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="green" class="bi bi-chevron-right pt-1" viewBox="0 0 16 16">
     <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
     </svg>
+    <a href="http://127.0.0.1:5500/dist/index.html" class="hover:text-green-400">
     Marketing
+    </a>
     </li>
     </ul>
    </div>
@@ -1200,31 +1227,31 @@ float {
    <div class="text-gray-500 text-lg lg:pt-0 sm:pt-6 md:pt-6">
     <h1 class="w-72 font-bold">Follow us</h1>
     <p class="text-sm text-gray-700 mt-3 w-96">Sarah watched She couldn't take her eyes off the water swirling around and around</p>
-    <div class="lg:flex lg:mt-5 space-x-3 sm:mt-10 sm:pl-10 flex md:pl-0">
-    <div class="w-9 h-10 border-2 border-gray-600 rounded-full"> 
+    <div class="lg:flex lg:mt-5 space-x-3 sm:mt-10 sm:pl-10 flex md:pl-0 my-5">
+    <div class=" group w-9 h-10 border border-gray-600 rounded-full hover:border-green-500" role="button"> 
     <div class="p-2">
-    <a href="https://x.com/login?"> 
+    <a href="https://x.com/login?" class="group-hover:text-green-500"> 
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
     <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
     </svg></a></div></div>
     <!------facebook----->
-    <div class="w-9 h-10 border-2 border-gray-600 rounded-full"> 
+    <div class=" group w-9 h-10 border border-gray-600 rounded-full hover:border-green-500" role="button"> 
     <div class="p-2">
-    <a href="https://www.facebook.com/login.php/">
+    <a href="https://www.facebook.com/login.php/" class="group-hover:text-green-500">
     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
     <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
     </svg></a></div></div>
     <!---------instagram------>
-    <div class="w-9 h-10 border-2 border-gray-600 rounded-full"> 
+    <div class="group w-9 h-10 border border-gray-600 rounded-full hover:border-green-500"" role="button"> 
     <div class="p-2">
-    <a href="https://www.instagram.com/accounts/login/?hl=en">
+    <a href="https://www.instagram.com/accounts/login/?hl=en" class="group-hover:text-green-500">
     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
     <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
     </svg></a></div></div>
     <!--------linkedin-------------->
-    <div class="w-9 h-10 border-2 border-gray-600 rounded-full"> 
+    <div class="group w-9 h-10 border border-gray-600 rounded-full hover:border-green-500"" role="button"> 
     <div class="p-2">
-    <a href="https://www.linkedin.com/login">
+    <a href="https://www.linkedin.com/login" class="group-hover:text-green-500">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
     <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
     </svg></a></div></div>
@@ -1234,12 +1261,12 @@ float {
 
 
 <!----------------------------------Copyright Section---------------------------->
-<div class="my-10 mx-56">
+<div class="my-2 mx-56">
 <hr>
 </div>
 <div class="mx-10">
-<p class="text-center mb-0"> @ Copyright <b>eNno</b> All Rights Reserved</p>
- <p class="fs-8 text-center mt-0"> Designed by <span class="text-green-600">BootstrapMade</span> Distributed by <span class="text-green-600"> ThemeWagon </span></p>
+<p class=" text-sm text-center mb-0"> @ Copyright <b>eNno</b> All Rights Reserved</p>
+ <p class=" text-sm text-center mt-0"> Designed by <span class="text-green-600">BootstrapMade</span> Distributed by <span class="text-green-600"> ThemeWagon </span></p>
  </div>
 
 <div class="rounded-full shadow-lg fixed bottom-5 right-5 cursor-pointer hover" onclick="window.scrollTo({top:0, behavior:'smooth'});">
@@ -1255,9 +1282,6 @@ float {
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>AOS.init();</script>
-
-
-
 
 <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
 
