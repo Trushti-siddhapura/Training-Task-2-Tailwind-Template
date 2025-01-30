@@ -19,17 +19,17 @@
         width: 12px;
         height: 12px;
         border: 2px solid green;
-      } 
+      }
       .swiper-pagination-bullet-active {
   background: green;
   border: none;
-} 
+}
 #floating {
     position: relative;
     animation: float 3s ease-in-out infinite;
 }
 
-@keyframes 
+@keyframes
 float {
     0% {
         transform: translateY(0);
@@ -46,14 +46,14 @@ float {
  </style>
 </head>
 <body>
-    
+   
  <!-----------------------Navbar----------------->
  <nav class="navbar  flex flex:md text-gray-500 bg-white fixed w-full border py-5 shadow-lg z-20">
  <h1 class="lg:mx-32  2xl:mx-72 xl:mx-52 font-bold text-3xl text-gray-500">enNo</h1>
  
 
   <!----------Desktop Menu-->
- <ul class=" lg:px-44 xl:flex hidden  space-x-7 justify-center sm:hidden md:hidden lg:hidden">
+ <ul class=" lg:mx-80 xl:flex hidden text-lg space-x-7 justify-center sm:hidden md:hidden lg:hidden">
  <li class="cursor-pointer text-green-500">
  <a href="http://127.0.0.1:5500/dist/index.html">
  Home</li></a>
@@ -129,19 +129,17 @@ float {
 </li></ul>
 
 
-<div class="xl:hidden flex md:ms-auto md:me-3  sm:ms-auto sm:mx-60 sm:pe-96">
-    <label for="menu-toggle" class="cursor-pointer">
-        <div class="flex lg:mx-96 xl:mx-72 md:mx-56 sm:mx-80 mx-28  md:ps-auto">
-        <div class="xl:hidden mx-5">
-            <button class="flex  px-3 py-1 w-28 bg-green-600 rounded-full text-center text-white text-sm">Get started</button>
-          </div>
+<div class="flex justify-end xl:hidden w-full md:px-10 sm:px-8 px-5">
+    <label for="menu-toggle" class="cursor-pointer flex items-center space-x-4">
+        <button class="px-4 py-2 bg-green-600 rounded-full text-white text-sm">Get started</button>
         <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
         </svg>
-    </div>
     </label>
-  </div>
-  
+</div>
+   
+
+ 
   <input type="checkbox" id="menu-toggle" class="peer hidden">
   <div class="peer-checked:block lg:hidden hidden absolute w-full bg-white p-6  top-0 z-40">
     <ul class="flex flex-col space-y-4 items-center text-gray-700 xl:hidden">
@@ -155,8 +153,8 @@ float {
 
     </ul>
   </div>
-  
-  
+ 
+ 
 
 
 </nav>
@@ -176,21 +174,21 @@ float {
  </svg><p class="mt-1 group-hover:text-green-600" role="button">Watch Video</p></div></div>
  </div>
  </div>
- <img src="Images/hero-img.png" class="mr-96 mt-20 w-[576px] h-[550px]" id="floating" data-aos="zoom-out" data-aos-duration="1000">
+ <img src="Images/hero-img.png" class="mt-20 w-[576px] h-[550px] md:w-[700px] md:h-[600px]" id="floating" data-aos="zoom-out" data-aos-duration="1000">
  </div>
  
 
  <!-------------The cards System---------------->
  
  
- <div class="grid lg:grid-cols-3 md:grid-cols-1 sm:grids-cols-1 xl:grid-cols-3  mt-20 gap-4 2xl:mx-60 xl:mx-64 lg:mx-20 md:mx-10 mx-4">
+ <div class="grid lg:grid-cols-3 md:grid-cols-1 sm:grids-cols-1 xl:grid-cols-3  mt-20 gap-4 2xl:mx-60 xl:mx-64 lg:mx-10 md:mx-10 mx-4">
     <div class="group">
  <div class=" bg-slate-50 text-gray-600 p-12  group-hover:-translate-y-5" data-aos="fade-up" data-aos-duration="600" role="button">
     <div class="service-item position-relative group transform transition-transform duration-500">
     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="green" class="bi bi-activity" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2"/>
       </svg>
- <h2 class="text-2xl font-bold pt-5 group-hover:text-green-500">Magni Dolores</h2> 
+ <h2 class="text-2xl font-bold pt-5 group-hover:text-green-500">Magni Dolores</h2>
  <p class="pt-3">Excepteur sint Occaecat cupidatat non-proident,sunt in culpa qui officia</p>
  </div>
 </div>
@@ -202,7 +200,7 @@ float {
  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 30 30" stroke="green" class="w-14 h-14">
  <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
  </svg>
- <h2 class="text-2xl font-bold group-hover:text-green-600">Magni Dolores</h2> 
+ <h2 class="text-2xl font-bold group-hover:text-green-600">Magni Dolores</h2>
  <p class="pt-3">Excepteur sint Occaecat cupidatat non-proident,sunt in culpa qui officia</p>
  </div>
  </div>
@@ -213,14 +211,14 @@ float {
  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 30 30" stroke="green" class="w-14 h-14">
  <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
  </svg>
- <h2 class="text-2xl font-bold group-hover:text-green-600">Magni Dolores</h2> 
+ <h2 class="text-2xl font-bold group-hover:text-green-600">Magni Dolores</h2>
  <p class="pt-3">Excepteur sint Occaecat cupidatat non-proident,sunt in culpa qui officia</p>
  </div>
  </div>
 </div>
  </div>
 
-<!-----------About Section-------------> 
+<!-----------About Section------------->
 <section>
 
  <div class="lg:mt-40 md:mt-10">
@@ -237,19 +235,27 @@ float {
  <div class="relative">
  
  
-
     <div class="relative">
-        <img src="Images/about.png">
-        <div class="absolute top-1/2 start-72">
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="green" class="bi bi-play-circle-fill" viewBox="0 0 16 16">
-            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+        <!-- Background Image -->
+        <img src="Images/about.png" alt="About Image" class="w-full h-auto">
+       
+        <!-- Play Button Wrapper -->
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+          <!-- Green Circle with White Play Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 16 16" class="text-green-500">
+            <circle cx="8" cy="8" r="8" fill="green" />
+            <polygon points="6,4.5 11,8 6,11.5" fill="white" />
           </svg>
-          <span class="flex mx-3 -mt-7">
-            <span class="animate-ping absolute inline-flex h-10 w-10 rounded-full bg-green-500 opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-10 w-10"></span>
+         
+          <!-- Animated Ping Effect -->
+          <span class="flex justify-center items-center absolute inset-0">
+            <span class="animate-ping absolute inline-flex h-20 w-20 rounded-full bg-green-500 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-20 w-20"></span>
           </span>
-    </div>
-</div>
+        </div>
+      </div>
+     
+     
  </div>
  <div class="text-gray-500 lg:ms-12 mx-5">
  <h1 class="text-3xl font-bold">Voluptatem dignission providing in the the main header section which is very easy</h1>
@@ -305,7 +311,7 @@ float {
     </div>
   </div>
 </div>
-  
+ 
 
 <!---------------The services Section--------------------->
 <div class="lg:mt-40 md:mt-10">
@@ -316,18 +322,18 @@ float {
  Necessitation eius consequatur ex aliquid fuga eum quidum sint consequatur
  </p>
 <!----------1-->
-<div class=" lg:mx-10 xl:mx-20 2xl:mx-60 md:mx-5 sm:mx-20 lg:my-12" data-aos="fade-up" data-aos-duration="500">
+<div class="xl:mx-20 2xl:mx-60 md:mx-5 sm:mx-20 lg:my-12" data-aos="fade-up" data-aos-duration="500">
  <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 lg:mx-10 xl:grid-cols-3 2xl:grid-cols-3 gap-7 mx-4 justify-center">
- <div class="border-2 bg-white border-gray-300 p-20 hover:border-green-500">
+ <div class="border bg-white border-gray-300 p-20 hover:border-green-500">
  
  <svg xmlns="http://www.w3.org/2000/svg" width="65" height="60" fill="white" class="bi bi-activity justify-self-center bg-green-700 p-4 my-1 rounded" viewBox="0 0 16 16">
  <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2"/>
  </svg><p class="text-xl text-gray-500 text-center font-bold mt-4">Nesciunt Mete</p>
  <p class="text-sm -mx-14 mt-3">There wasn't a whole lot he could do at that moment. He played the situation again and again in his head looking at what he might have done differently to make the situation better.</p>
- <!----------2--> 
+ <!----------2-->
  </div>
 
- <div class="border-2 bg-white border-gray-300 p-20 hover:border-green-500" data-aos="fade-up" data-aos-duration="600">
+ <div class="border bg-white border-gray-300 p-20 hover:border-green-500" data-aos="fade-up" data-aos-duration="600">
  
  <svg xmlns="http://www.w3.org/2000/svg" width="65" height="60" fill="white" class="bi bi-broadcast justify-self-center bg-green-700 p-4 my-1 rounded" viewBox="0 0 16 16">
  <path d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707m2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 1 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708m5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708m2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707zM10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0"/>
@@ -336,7 +342,7 @@ float {
  
  </div>
  <!----------3-->
- <div class="border-2 bg-white border-gray-300 p-20 hover:border-green-500" data-aos="fade-up" data-aos-duration="700">
+ <div class="border bg-white border-gray-300 p-20 hover:border-green-500" data-aos="fade-up" data-aos-duration="700">
  
  <svg xmlns="http://www.w3.org/2000/svg" width="65" height="60" fill="white" class="bi bi-easel justify-self-center bg-green-700 p-4 my-1 rounded" viewBox="0 0 16 16">
  <path d="M8 0a.5.5 0 0 1 .473.337L9.046 2H14a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1.85l1.323 3.837a.5.5 0 1 1-.946.326L11.092 11H8.5v3a.5.5 0 0 1-1 0v-3H4.908l-1.435 4.163a.5.5 0 1 1-.946-.326L3.85 11H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h4.954L7.527.337A.5.5 0 0 1 8 0M2 3v7h12V3z"/>
@@ -345,7 +351,7 @@ float {
  
  </div>
  <!----------4-->
- <div class="border-2 bg-white border-gray-300 p-20 hover:border-green-500" data-aos="fade-up" data-aos-duration="800">
+ <div class="border bg-white border-gray-300 p-20 hover:border-green-500" data-aos="fade-up" data-aos-duration="800">
  
  <svg xmlns="http://www.w3.org/2000/svg" width="65" height="60" fill="white" class="bi bi-crop justify-self-center bg-green-700 p-4 my-1 rounded " viewBox="0 0 16 16">
  <path d="M3.5.5A.5.5 0 0 1 4 1v13h13a.5.5 0 0 1 0 1h-2v2a.5.5 0 0 1-1 0v-2H3.5a.5.5 0 0 1-.5-.5V4H1a.5.5 0 0 1 0-1h2V1a.5.5 0 0 1 .5-.5m2.5 3a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v8a.5.5 0 0 1-1 0V4H6.5a.5.5 0 0 1-.5-.5"/>
@@ -353,8 +359,8 @@ float {
  <p class="text-sm -mx-14 mt-3">There wasn't a whole lot he could do at that moment. He played the situation again and again in his head looking at what he might have done differently to make the situation better.</p>
  
 </div>
-<!----------5--> 
-<div class="border-2 bg-white border-gray-300 p-20 hover:border-green-500" data-aos="fade-up" data-aos-duration="900">
+<!----------5-->
+<div class="border bg-white border-gray-300 p-20 hover:border-green-500" data-aos="fade-up" data-aos-duration="900">
  
  <svg xmlns="http://www.w3.org/2000/svg" width="65" height="60" fill="white" class="bi bi-calendar-week justify-self-center bg-green-700 p-4 my-1 rounded " viewBox="0 0 16 16">
  <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z"/>
@@ -364,7 +370,7 @@ float {
 
 </div>
 <!----------6-->
- <div class="border-2 bg-white border-gray-300 p-20 hover:border-green-500" data-aos="fade-up" data-aos-duration="1000">
+ <div class="border bg-white border-gray-300 p-20 hover:border-green-500" data-aos="fade-up" data-aos-duration="1000">
  
  <svg xmlns="http://www.w3.org/2000/svg" width="65" height="60" fill="white" class="bi bi-activity justify-self-center bg-green-700 p-4 my-1 rounded" viewBox="0 0 16 16">
  <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2"/>
@@ -397,8 +403,8 @@ float {
 <div class="mt-5">
 <div class="grid lg:grid-cols-3 xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 lg:mx-10 sm:mx-20 xl:mx-60 md:mx-10 mx-4 gap-7" data-aos="fade-up" data-aos-duration="1000">
 <div class="flex">
- <div class="group relative">   
- <img src="Images/app-1.jpg" class="group-hover:opacity-100 transition-opacity"> 
+ <div class="group relative">  
+ <img src="Images/app-1.jpg" class="group-hover:opacity-100 transition-opacity">
  <div class="absolute left-5 right-5 bottom-5 h-1/4 opacity-0 bg-gray-100 group-hover:opacity-100 transition-opacity duration-500 ease-in-out flex flex-col  items-start p-4">
  <!-- Flex container for aligning items -->
  <div>
@@ -424,7 +430,7 @@ float {
  </div>
  
  <div class="flex">
-    <div class="group relative">   
+    <div class="group relative">  
     <img src="Images/product-1.jpg" class="group-hover:opacity-100 transition-opacity">
     <div class="absolute left-5 right-5 bottom-5 h-1/4 opacity-0 bg-gray-100 group-hover:opacity-100 transition-opacity duration-500 ease-in-out flex flex-col  items-start p-4">
     <!-- Flex container for aligning items -->
@@ -450,7 +456,7 @@ float {
     </div>
     </div>
     <div class="flex">
-        <div class="group relative">   
+        <div class="group relative">  
         <img src="Images/app-1.jpg" class="group-hover:opacity-100 transition-opacity">
         <div class="absolute left-5 right-5 bottom-5 h-1/4 opacity-0 bg-gray-100 group-hover:opacity-100 transition-opacity duration-500 ease-in-out flex flex-col  items-start p-4">
         <!-- Flex container for aligning items -->
@@ -477,7 +483,7 @@ float {
         </div>
 
         <div class="flex">
-            <div class="group relative">   
+            <div class="group relative">  
             <img src="Images/books-1.jpg" class="group-hover:opacity-100 transition-opacity">
             <div class="absolute left-5 right-5 bottom-5 h-1/4 opacity-0 bg-gray-100 group-hover:opacity-100 transition-opacity duration-500 ease-in-out flex flex-col  items-start p-4">
             <!-- Flex container for aligning items -->
@@ -503,7 +509,7 @@ float {
             </div>
             </div>
     <div class="flex">
-        <div class="group relative">   
+        <div class="group relative">  
         <img src="Images/app-2.jpg" class="group-hover:opacity-100 transition-opacity">
         <div class="absolute left-5 right-5 bottom-5 h-1/4 opacity-0 bg-gray-100 group-hover:opacity-100 transition-opacity duration-500 ease-in-out flex flex-col  items-start p-4">
         <!-- Flex container for aligning items -->
@@ -529,7 +535,7 @@ float {
         </div>
         </div>
         <div class="flex">
-            <div class="group relative">   
+            <div class="group relative">  
             <img src="Images/product-2.jpg" class="group-hover:opacity-100 transition-opacity">
             <div class="absolute left-5 right-5 bottom-5 h-1/4 opacity-0 bg-gray-100 group-hover:opacity-100 transition-opacity duration-500 ease-in-out flex flex-col  items-start p-4">
             <!-- Flex container for aligning items -->
@@ -558,7 +564,7 @@ float {
 
 
     <div class="flex">
-        <div class="group relative">   
+        <div class="group relative">  
         <img src="Images/branding-2.jpg" class="group-hover:opacity-100 transition-opacity">
         <div class="absolute left-5 right-5 bottom-5 h-1/4 opacity-0 bg-gray-100 group-hover:opacity-100 transition-opacity duration-500 ease-in-out flex flex-col  items-start p-4">
         <!-- Flex container for aligning items -->
@@ -584,7 +590,7 @@ float {
         </div>
         </div>
         <div class="flex">
-            <div class="group relative">   
+            <div class="group relative">  
             <img src="Images/books-2.jpg" class="group-hover:opacity-100 transition-opacity">
             <div class="absolute left-5 right-5 bottom-5 h-1/4 opacity-0 bg-gray-100 group-hover:opacity-100 transition-opacity duration-500 ease-in-out flex flex-col  items-start p-4">
             <!-- Flex container for aligning items -->
@@ -610,7 +616,7 @@ float {
             </div>
             </div>
     <div class="flex">
-        <div class="group relative">   
+        <div class="group relative">  
         <img src="Images/app-3.jpg" class="group-hover:opacity-100 transition-opacity">
         <div class="absolute left-5 right-5 bottom-5 h-1/4 opacity-0 bg-gray-100 group-hover:opacity-100 transition-opacity duration-500 ease-in-out flex flex-col  items-start p-4">
         <!-- Flex container for aligning items -->
@@ -637,7 +643,7 @@ float {
         </div>
 
     <div class="flex">
-        <div class="group relative">   
+        <div class="group relative">  
         <img src="Images/product-3.jpg" class="group-hover:opacity-100 transition-opacity">
         <div class="absolute left-5 right-5 bottom-5 h-1/4 opacity-0 bg-gray-100 group-hover:opacity-100 transition-opacity duration-500 ease-in-out flex flex-col  items-start p-4">
         <!-- Flex container for aligning items -->
@@ -663,7 +669,7 @@ float {
         </div>
         </div>
         <div class="flex">
-            <div class="group relative">   
+            <div class="group relative">  
             <img src="Images/branding-3.jpg" class="group-hover:opacity-100 transition-opacity">
             <div class="absolute left-5 right-5 bottom-5 h-1/4 opacity-0 bg-gray-100 group-hover:opacity-100 transition-opacity duration-500 ease-in-out flex flex-col  items-start p-4">
             <!-- Flex container for aligning items -->
@@ -689,7 +695,7 @@ float {
             </div>
             </div>
     <div class="flex">
-        <div class="group relative">   
+        <div class="group relative">  
         <img src="Images/books-3.jpg" class="group-hover:opacity-100 transition-opacity">
         <div class="absolute left-5 right-5 bottom-5 h-1/4 opacity-0 bg-gray-100 group-hover:opacity-100 transition-opacity duration-500 ease-in-out flex flex-col  items-start p-4">
         <!-- Flex container for aligning items -->
@@ -730,19 +736,19 @@ float {
 <div class="swiper-wrapper">
 <div class="swiper-slide">
 <div class="border shadow text-gray-500 bg-gray-100 py-2">
-    
+   
         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="green" class="bi bi-quote" viewBox="0 0 16 16">
             <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
             </svg>
             <p class="mx-3 mb-20 text-center text-base">
-            It had become a far too common an event in her life. 
+            It had become a far too common an event in her life.
         She has specifically placed the key to the box in a special.
         exactly where it was when the key.
         <span class="inline-flex"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="green" class="bi bi-quote" viewBox="0 0 16 16">
             <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
             </svg></span>
                 </div></p>
-        
+       
         <div class="-mt-10">
         <div class="rounded-full mx-4 items-start">
             <img src="Images/testimonials-3.jpg" class="rounded-full w-20 h-20 border-4  border-white">  
@@ -753,19 +759,19 @@ float {
     </div>  
 <div class="swiper-slide">
     <div class="border shadow text-gray-500 bg-gray-100 py-2">
-        
+       
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="green" class="bi bi-quote" viewBox="0 0 16 16">
                 <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
                 </svg>
                 <p class="mx-3 mb-20 text-center text-base">
-                It had become a far too common an event in her life. 
+                It had become a far too common an event in her life.
             She has specifically placed the key to the box in a special.
             exactly where it was when the key.
             <span class="inline-flex"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="green" class="bi bi-quote" viewBox="0 0 16 16">
                 <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
                 </svg></span>
                     </div></p>
-            
+           
             <div class="-mt-10">
             <div class="rounded-full mx-4 items-start">
                 <img src="Images/testimonials-4.jpg" class="rounded-full w-20 h-20 border-4  border-white">  
@@ -776,19 +782,19 @@ float {
         </div>  
 <div class="swiper-slide">
     <div class="border shadow text-gray-500 bg-gray-100 py-2">
-        
+       
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="green" class="bi bi-quote" viewBox="0 0 16 16">
                 <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
                 </svg>
                 <p class="mx-3 mb-20 text-center text-base">
-                It had become a far too common an event in her life. 
+                It had become a far too common an event in her life.
             She has specifically placed the key to the box in a special.
             exactly where it was when the key.
             <span class="inline-flex"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="green" class="bi bi-quote" viewBox="0 0 16 16">
                 <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
                 </svg></span>
                     </div></p>
-            
+           
             <div class="-mt-10">
             <div class="rounded-full mx-4 items-start">
                 <img src="Images/testimonials-5.jpg" class="rounded-full w-20 h-20 border-4  border-white">  
@@ -799,19 +805,19 @@ float {
         </div>  
     <div class="swiper-slide">
         <div class="border shadow text-gray-500 bg-gray-100 py-2">
-            
+           
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="green" class="bi bi-quote" viewBox="0 0 16 16">
                     <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
                     </svg>
                     <p class="mx-3 mb-20 text-center text-base">
-                    It had become a far too common an event in her life. 
+                    It had become a far too common an event in her life.
                 She has specifically placed the key to the box in a special.
                 exactly where it was when the key.
                 <span class="inline-flex"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="green" class="bi bi-quote" viewBox="0 0 16 16">
                     <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
                     </svg></span>
                         </div></p>
-                
+               
                 <div class="-mt-10">
                 <div class="rounded-full mx-4 items-start">
                     <img src="Images/testimonials-1.jpg" class="rounded-full w-20 h-20 border-4  border-white">  
@@ -822,19 +828,19 @@ float {
             </div>  
 <div class="swiper-slide">
     <div class="border shadow text-gray-500 bg-gray-100 py-2">
-        
+       
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="green" class="bi bi-quote" viewBox="0 0 16 16">
                 <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
                 </svg>
                 <p class="mx-3 mb-20 text-center text-base">
-                It had become a far too common an event in her life. 
+                It had become a far too common an event in her life.
             She has specifically placed the key to the box in a special.
             exactly where it was when the key.
        <span class="inline-flex"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="green" class="bi bi-quote" viewBox="0 0 16 16">
         <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
         </svg></span>
             </div></p>
-            
+           
             <div class="-mt-10">
             <div class="rounded-full mx-4 items-start">
                 <img src="Images/testimonials-2.jpg" class="rounded-full w-20 h-20 border-4  border-white">  
@@ -843,20 +849,20 @@ float {
             </div>
         </div>
         </div>  
-        
+       
     </div>  
    
       </div>
       </div>
 
-      <div class="mt-10">                                   
+      <div class="mt-10">                                  
         <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
             <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button"  aria-current="true">
             </span>
             <span class="swiper-pagination-bullet" tabindex="0" role="button"></span>
             <span class="swiper-pagination-bullet" tabindex="0" role="button"></span>
             <span class="swiper-pagination-bullet" tabindex="0" role="button"></span>
-        </div> 
+        </div>
     </div>
 
 
@@ -891,9 +897,9 @@ float {
             disableOnInteraction: false,
             },
         });
-        
+       
       </script>
-    
+   
 <!----------------call to Action ---------------->
 <div class="bg-green-500 py-16">
     <div class="max-w-6xl mx-auto px-6 md:px-8 lg:px-12">
@@ -1084,14 +1090,14 @@ float {
                     <p class="text-sm mx-3">108, Shirdidham Society Varachcha Road Susrat</p>
                 </div>
             </div>    
-            
+           
             <iframe
             class="w-full h-64 rounded-md mt-2"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.944881719592!2d-73.98253598459794!3d40.7625975793276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7f7f65a5a92bd5f7!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1632747605032!5m2!1sen!2sus"></iframe>
             </div>
-        
+       
          </div>
-    
+   
 <!-------------------section 2---------->
 <div class="grid xl:col-span-3 lg:col-span-3 md:col-span-5" data-aos="fade-up" data-aos-duration="900">
     <div class="border bg-white shadow py-6 px-10">
@@ -1109,11 +1115,11 @@ float {
             <div class="mb-6">
                 <label for="email" class="block mb-2 text-base text-gray-900">Subject</label>
                 <input type="email" id="email" class="bg-gray-50 border outline-none hover:border-green-700 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
-            </div> 
+            </div>
             <div class="mb-6">
                 <label for="email" class="block mb-2 text-base text-gray-900">Message</label>
                 <input type="email" id="email" class="bg-gray-50 border outline-none hover:border-green-700 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full h-56 p-2.5">
-            </div> 
+            </div>
  
 
     <button type="button" class="text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 rounded-full text-base w-full sm:w-auto px-7 lg:ms-60 py-2.5 text-center justify-center">Send Message</button>
@@ -1134,8 +1140,8 @@ float {
 
 
 <!------------footer Section------------>
-<div class="grid xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 sm:mx-10 space-y-4 2xl:mx-60 lg:mx-10 py-10 ">
-    <div class="space-y-4 lg:mt-3">
+<div class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 sm:mx-10 space-y-4 2xl:mx-60 lg:mx-20 xl:mx-5  mx-5 py-10 ">
+    <div class="space-y-4 lg:mt-3 md:mt-8">
     <h1 class="text-gray-500 text-2xl font-bold ">eNno</h1>
     <p class="w-40 text-sm">A 108 Adam Street New your,NY 535022</p>
     <p class="font-bold text-gray-600 mb-0 text-sm">Phone:<span class="text-gray-400">+1 845974558625</span></p>
@@ -1144,7 +1150,7 @@ float {
    
    
    <!------------section 1------------------->
-   <div class="text-lg text-gray-500 xl:ps-32 lg:ps-36 lg:pt-0 space-y-4 sm:pt-6 md:pt-6">
+   <div class="text-lg text-gray-500 lg:pt-0 space-y-4 sm:pt-6 md:pt-6 lg:ms-28">
     <h1 class="w-72 font-bold">Useful links</h1>
     <ul class="text-sm text-gray-500 space-y-2">
     <li class="flex">
@@ -1227,29 +1233,29 @@ float {
    <div class="text-gray-500 text-lg lg:pt-0 sm:pt-6 md:pt-6">
     <h1 class="w-72 font-bold">Follow us</h1>
     <p class="text-sm text-gray-700 mt-3 w-96">Sarah watched She couldn't take her eyes off the water swirling around and around</p>
-    <div class="lg:flex lg:mt-5 space-x-3 sm:mt-10 sm:pl-10 flex md:pl-0 my-5">
-    <div class=" group w-9 h-10 border border-gray-600 rounded-full hover:border-green-500" role="button"> 
+    <div class="lg:mt-5 space-x-3 sm:mt-10 sm:pl-10 flex md:pl-0 my-5">
+    <div class=" group w-9 h-10 border border-gray-600 rounded-full hover:border-green-500" role="button">
     <div class="p-2">
-    <a href="https://x.com/login?" class="group-hover:text-green-500"> 
+    <a href="https://x.com/login?" class="group-hover:text-green-500">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
     <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
     </svg></a></div></div>
     <!------facebook----->
-    <div class=" group w-9 h-10 border border-gray-600 rounded-full hover:border-green-500" role="button"> 
+    <div class=" group w-9 h-10 border border-gray-600 rounded-full hover:border-green-500" role="button">
     <div class="p-2">
     <a href="https://www.facebook.com/login.php/" class="group-hover:text-green-500">
     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
     <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
     </svg></a></div></div>
     <!---------instagram------>
-    <div class="group w-9 h-10 border border-gray-600 rounded-full hover:border-green-500"" role="button"> 
+    <div class="group w-9 h-10 border border-gray-600 rounded-full hover:border-green-500"" role="button">
     <div class="p-2">
     <a href="https://www.instagram.com/accounts/login/?hl=en" class="group-hover:text-green-500">
     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
     <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
     </svg></a></div></div>
     <!--------linkedin-------------->
-    <div class="group w-9 h-10 border border-gray-600 rounded-full hover:border-green-500"" role="button"> 
+    <div class="group w-9 h-10 border border-gray-600 rounded-full hover:border-green-500"" role="button">
     <div class="p-2">
     <a href="https://www.linkedin.com/login" class="group-hover:text-green-500">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
